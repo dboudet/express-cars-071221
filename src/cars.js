@@ -19,6 +19,6 @@ const cars = [{
 exports.getCars = (req,res) => res.send(cars)
 
 exports.getSingleCar = (req,res) => {
-    const carId = req.params
+    const { carId } = req.params
     res.send(cars[carId])
 }
